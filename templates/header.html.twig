@@ -17,7 +17,7 @@
         <div id="mySignup" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySignupModalLabel" aria-hidden="true">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h4 id="mySignupModalLabel">Create an <strong>account</strong></h4>
+            <h4 id="mySignupModalLabel">Crea un <strong>account</strong></h4>
           </div>
           <div class="modal-body">
             <form class="form-horizontal">
@@ -41,10 +41,10 @@
               </div>
               <div class="control-group">
                 <div class="controls">
-                  <button type="submit" class="btn">Sign up</button>
+                  <button type="submit" class="btn">Registrati</button>
                 </div>
                 <p class="aligncenter margintop20">
-                  Already have an account? <a href="#mySignin" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Sign in</a>
+                  Hai già un account? <a href="#mySignin" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Accedi</a>
                 </p>
               </div>
             </form>
@@ -55,31 +55,14 @@
         <div id="mySignin" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySigninModalLabel" aria-hidden="true">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h4 id="mySigninModalLabel">Login to your <strong>account</strong></h4>
+            <h4 id="mySigninModalLabel">Accedi al tuo <strong>account</strong></h4>
           </div>
           <div class="modal-body">
-            <form class="form-horizontal">
-              <div class="control-group">
-                <label class="control-label" for="inputText">Username</label>
-                <div class="controls">
-                  <input type="text" id="inputText" placeholder="Username">
-                </div>
-              </div>
-              <div class="control-group">
-                <label class="control-label" for="inputSigninPassword">Password</label>
-                <div class="controls">
-                  <input type="password" id="inputSigninPassword" placeholder="Password">
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="controls">
-                  <button type="submit" class="btn">Sign in</button>
-                </div>
-                <p class="aligncenter margintop20">
-                  Forgot password? <a href="#myReset" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Reset</a>
-                </p>
-              </div>
-            </form>
+
+              {{ render(controller(
+                  'App\\Controller\\SecurityController::login'
+              )) }}
+
           </div>
         </div>
         <!-- end signin modal -->
@@ -87,7 +70,7 @@
         <div id="myReset" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="myResetModalLabel" aria-hidden="true">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h4 id="myResetModalLabel">Reset your <strong>password</strong></h4>
+            <h4 id="myResetModalLabel">Resetta la tua <strong>password</strong></h4>
           </div>
           <div class="modal-body">
             <form class="form-horizontal">
@@ -129,25 +112,25 @@
                   <a href="{{ path('home') }}">Home</a>
                 </li>
                 <li>
-                  <a href="{{ path('home') }}">Chi siamo</a>
+                  <a href="{{ path('about') }}">Chi siamo</a>
                 </li>
                 <li>
-                  <a href="{{ path('home') }}">Quotazioni</a>
+                  <a href="{{ path('quote') }}">Quotazioni</a>
                 </li>
                 <li>
-                  <a href="{{ path('home') }}">Ringraziamenti</a>
+                  <a href="{{ path('feedback') }}">Ringraziamenti</a>
                 </li>
                 <li>
-                  <a href="{{ path('home') }}">Note legali</a>
+                  <a href="{{ path('note') }}">Note legali</a>
                 </li>
                 <li>
-                  <a href="{{ path('home') }}">Contattaci</a>
+                  <a href="{{ path('contact') }}">Contattaci</a>
                 </li>
                 <li>
-                  <a href="{{ path('home') }}">Notiziario</a>
+                  <a href="{{ path('blog') }}">Notiziario</a>
                 </li>
                 <li>
-                  <a href="{{ path('home') }}">Catalogo</a>
+                  <a href="{{ path('catalogo') }}">Catalogo</a>
                 </li>
 
                 {#                  <li class="#}{#dropdown#}{#">#}

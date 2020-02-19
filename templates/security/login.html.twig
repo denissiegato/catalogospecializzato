@@ -1,0 +1,36 @@
+   <form method="post" class="form-horizontal">
+        {% if error %}
+            <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+        {% endif %}
+
+        {% if app.user %}
+            <div class="mb-3">
+                You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
+            </div>
+        {% endif %}
+        <div class="control-group">
+            <label class="control-label" for="inputEmail">Username</label>
+            <div class="controls">
+                <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" required autofocus>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputPassword">Password</label>
+            <div class="controls">
+                <input type="password" name="password" id="inputPassword" class="form-control" required>
+            </div>
+        </div>
+
+        <input type="hidden" name="_csrf_token"
+               value="{{ csrf_token('authenticate') }}"
+        >
+
+        <div class="control-group">
+            <div class="controls">
+                <button class="btn btn-lg btn-primary" type="submit">Accedi</button>
+            </div>
+            <p class="aligncenter margintop20">
+                Hai perso la password? <a href="#myReset" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Reset</a>
+            </p>
+        </div>
+    </form>

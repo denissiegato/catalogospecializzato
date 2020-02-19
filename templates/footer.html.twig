@@ -3,31 +3,27 @@
     <div class="row">
       <div class="span3">
         <div class="widget">
-          <h5 class="widgetheading">Browse pages</h5>
+          <h5 class="widgetheading">Pagine</h5>
           <ul class="link-list">
-            <li><a href="#">About our company</a></li>
-            <li><a href="#">Our services</a></li>
-            <li><a href="#">Meet our team</a></li>
-            <li><a href="#">Explore our portfolio</a></li>
-            <li><a href="#">Get in touch with us</a></li>
+            <li><a href="{{ path('about') }}">Chi siamo</a></li>
+            <li><a href="{{ path('quote') }}">Quotazioni</a></li>
+            <li><a href="{{ path('contact') }}">Contattaci</a></li>
           </ul>
         </div>
       </div>
       <div class="span3">
         <div class="widget">
-          <h5 class="widgetheading">Important stuff</h5>
+          <h5 class="widgetheading">Informazioni importanti</h5>
           <ul class="link-list">
-            <li><a href="#">Press release</a></li>
-            <li><a href="#">Terms and conditions</a></li>
-            <li><a href="#">Privacy policy</a></li>
-            <li><a href="#">Career center</a></li>
-            <li><a href="#">Flattern forum</a></li>
+            <li><a href="{{ path('blog') }}">Notiziario</a></li>
+            <li><a href="{{ path('note') }}">Note legali</a></li>
+            <li><a href="{{ path('catalogo') }}">Catalogo</a></li>
           </ul>
         </div>
       </div>
       <div class="span3">
         <div class="widget">
-          <h5 class="widgetheading">Flickr photostream</h5>
+          <h5 class="widgetheading">Ultimi inserimenti</h5>
           <div class="flickr_badge">
             <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
           </div>
@@ -37,15 +33,15 @@
       </div>
       <div class="span3">
         <div class="widget">
-          <h5 class="widgetheading">Get in touch with us</h5>
+          <h5 class="widgetheading">Contatti</h5>
           <address>
-            <strong>Flattern studio, Pte Ltd</strong><br>
-            Springville center X264, Park Ave S.01<br>
-            Semarang 16425 Indonesia
+            <strong>{{siteAddress1}}</strong><br>
+            {{siteAddress2}}<br>
+            {{siteAddress3}}
           </address>
           <p>
-            <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
-            <i class="icon-envelope-alt"></i> email@domainname.com
+            <i class="icon-phone"></i> {{sitePhone}} <br>
+            <i class="icon-envelope-alt"></i> {{siteEmail}}
           </p>
         </div>
       </div>
@@ -57,7 +53,7 @@
         <div class="span6">
           <div class="copyright">
             <p>
-              <span>&copy; Flattern - All right reserved.</span>
+              <span>&copy; {{siteName}} 2020 - All right reserved.</span>
             </p>
             <div class="credits">
               <!--
@@ -66,17 +62,15 @@
                 Licensing information: https://bootstrapmade.com/license/
                 Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Flattern
               -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              Designed by <a href="http://www.denissiegato.com/" target="_blank">Denis Siegato</a>
             </div>
           </div>
         </div>
         <div class="span6">
           <ul class="social-network">
-            <li><a href="#" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-square"></i></a></li>
-            <li><a href="#" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-square"></i></a></li>
-            <li><a href="#" data-placement="bottom" title="Linkedin"><i class="icon-linkedin icon-square"></i></a></li>
-            <li><a href="#" data-placement="bottom" title="Pinterest"><i class="icon-pinterest icon-square"></i></a></li>
-            <li><a href="#" data-placement="bottom" title="Google plus"><i class="icon-google-plus icon-square"></i></a></li>
+            <li><a href="{{socialFacebookLink}}" data-placement="bottom" title="Facebook" target="_blank"><i class="icon-facebook icon-square"></i></a></li>
+{#            <li><a href="#" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-square"></i></a></li>#}
+            <li><a href="{{socialLinkedinLink}}" data-placement="bottom" title="Linkedin" target="_blank"><i class="icon-linkedin icon-square"></i></a></li>
           </ul>
         </div>
       </div>

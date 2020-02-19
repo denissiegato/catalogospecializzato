@@ -2,5 +2,12 @@ twig:
     default_path: '%kernel.project_dir%/templates'
     form_themes: ['bootstrap_4_layout.html.twig', 'form/my_theme.html.twig']
     globals:
-        siteName: 'CatalogoSPecializzato'
+        siteName: 'Catalogo Specializzato'
         siteSlogan: 'Repubblica Italiana'
+        siteAddress1: 'Via test, 45'
+        siteAddress2: '00100 Roma RM'
+        siteAddress3: 'Italia'
+        sitePhone: '+39 06060606'
+        siteEmail: 'info@catalogospecializzato.it'
+        socialFacebookLink: 'xxxxx'
+        socialLinkedinLink: 'xxxxx'
