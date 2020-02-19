@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="it" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="header.box_login.registration">
+                <source>header.box_login.registration</source>
+                <target><![CDATA[Registrati]]></target>
+            </trans-unit>
+            <trans-unit id="header.box_login.login">
+                <source>header.box_login.login</source>
+                <target><![CDATA[Login]]></target>
+            </trans-unit>
+            <trans-unit id="header.surprise.text">
+                <source>header.surprise.text</source>
+                <target><![CDATA[Cliccami per maggiori informazioni]]></target>
+            </trans-unit>
+            <trans-unit id="header.surprise.open">
+                <source>header.surprise.open</source>
+                <target><![CDATA[Apri]]></target>
+            </trans-unit>
+            <trans-unit id="header.surprise.slogan.1">
+                <source>header.surprise.slogan.1</source>
+                <target><![CDATA[<strong>We are available for any custom works this month</strong>]]></target>
+            </trans-unit>
+            <trans-unit id="header.surprise.slogan.2">
+                <source>header.surprise.slogan.2</source>
+                <target><![CDATA[Main office: Springville center X264, Park Ave S.01]]></target>
+            </trans-unit>
+            <trans-unit id="header.surprise.slogan.3">
+                <source>header.surprise.slogan.3</source>
+                <target><![CDATA[Call us <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891]]></target>
+            </trans-unit>
+            <trans-unit id="home.text.1">
+                <source>home.text.1</source>
+                <target><![CDATA[Confronta le varietà presenti sul sito con quelle in tuo possesso, iscriviti e invia tutte le immagini ed informazioni in tuo possesso non presenti nel catalogo.]]></target>
+            </trans-unit>
+            <trans-unit id="home.text.1.button">
+                <source>home.text.1.button</source>
+                <target><![CDATA[Invia il tuo contributo]]></target>
+            </trans-unit>
+
+            <trans-unit id="home.text.slider.1.title">
+                <source>home.text.slider.1.title</source>
+                <target><![CDATA[Cos’è catalogospecializzato.it]]></target>
+            </trans-unit>
+
+            <trans-unit id="home.text.slider.1.text">
+                <source>home.text.slider.1.text</source>
+                <target><![CDATA[è una piattaforma di contenuti e servizi dedicata alla filatelia specializzata nella Repubblica Italiana e non sostituisce i tradizionali cataloghi.]]></target>
+            </trans-unit>
+
+            <trans-unit id="home.text.slider.2.title">
+                <source>home.text.slider.2.title</source>
+                <target><![CDATA[Perché iscriversi]]></target>
+            </trans-unit>
+
+            <trans-unit id="home.text.slider.2.text">
+                <source>home.text.slider.2.text</source>
+                <target><![CDATA[Inviare un contributo è molto semplice!
+Confronta le varietà presenti sul sito con quelle in tuo possesso, iscriviti e invia tutte le immagini ed informazioni in tuo possesso non presenti nel catalogo.]]></target>
+            </trans-unit>
+
+            <trans-unit id="home.portfolio.recent.title">
+                <source>home.portfolio.recent.title</source>
+                <target><![CDATA[Alcuni lavori <strong>recenti</strong>]]></target>
+            </trans-unit>
+            <trans-unit id="home.portfolio.recent.text">
+                <source>home.portfolio.recent.text</source>
+                <target><![CDATA[]]></target>
+            </trans-unit>
+
+            <trans-unit id="system.read_more">
+                <source>system.read_more</source>
+                <target><![CDATA[Leggi ancora]]></target>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

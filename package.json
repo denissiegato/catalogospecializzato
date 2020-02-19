@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.28.2",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1",
+    "webpack-notifier": "^1.8.0"
+  },
+  "dependencies": {
+    "core-js": "^3",
+    "core.js": "^0.4.2",
+    "fancybox": "^3.0.1",
+    "flexslider": "^2.7.2",
+    "jcarousel": "^0.3.9",
+    "prettify": "^0.1.7",
+    "quicksand": "^0.0.1"
+  }
+}
