@@ -1,4 +1,4 @@
-   <form method="post" class="form-horizontal">
+   <form method="post" class="form-horizontal" action="#" id="loginForm">
         {% if error %}
             <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
         {% endif %}
@@ -27,7 +27,7 @@
 
         <div class="control-group">
             <div class="controls">
-                <button class="btn btn-lg btn-primary" type="submit">Accedi</button>
+                <button id="btnLogin" class="btn btn-lg btn-primary" type="submit">Accedi</button>
             </div>
             <p class="aligncenter margintop20">
                 Hai perso la password? <a href="#myReset" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Reset</a>

@@ -33,6 +33,21 @@
         {{ encore_entry_script_tags('slider') }}
         {{ encore_entry_script_tags('animate') }}
         {{ encore_entry_script_tags('custom') }}
+        <script type="text/javascript">
+            $("#btnLogin").click(function(event){
+                event.preventDefault();
+
+                $.ajax({
+                    type : 'POST',
+                    data: $("#loginForm").serialize(),
+                    url : '{{path('app_login')}}',
+                    success : function(data){
+
+                    }
+                });
+                return false;
+            });
+        </script>
     {% endblock %}
 </body>
 </html>
